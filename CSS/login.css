@@ -11,7 +11,7 @@ body {
     height: 100vh;
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
-    background-image: url(Amstel.png);
+    background-image: url(../images/Amstel.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
