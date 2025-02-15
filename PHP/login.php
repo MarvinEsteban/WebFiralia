@@ -1,33 +1,28 @@
 <?php
-// Iniciar sesión para poder utilizar variables de sesión
 session_start();
 
-// Definir credenciales de usuario válidas (en un entorno real, estos valores vendrían de una base de datos)
-$usuario_valido = 'admin';
-$contrasena_valida = '12345';
+$usuario_valido = 'usuario';
+$contrasena_usuario_valida = '12345';
+$admin_valido = 'admin';
+$contrasena_admin_valida = '54321';
 
-// Inicializar una variable para el mensaje de error
-$error = "";
-
-// Si se envía el formulario (POST), procesar el inicio de sesión
+// Si se envía el formulario
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Obtener los valores del formulario
     $usuario = $_POST['usuario'];
     $contrasena = $_POST['password'];
 
-    // Validar credenciales
-    if ($usuario === $usuario_valido && $contrasena === $contrasena_valida) {
-        // Si las credenciales son correctas, se inicia sesión
+    if ($usuario === $usuario_valido && $contrasena === $contrasena_usuario_valida) {
         $_SESSION['usuario'] = $usuario;
-        header("Location: /WebFiralia/HTML/bienvenido.html"); // Redirigir a una página de bienvenida
+        header("Location: ../bienvenidoUsuario.html");
+        exit();
+    } elseif ($usuario === $admin_valido && $contrasena === $contrasena_admin_valida) {
+        $_SESSION['usuario'] = $usuario;
+        header("Location: ../bienvenidoAdmin.html");
         exit();
     } else {
-        // Si las credenciales no coinciden, se muestra un mensaje de error
-        $error = "Usuario o contraseña incorrectos.";
+        // Redirigir de vuelta a login.html con un mensaje de error
+        header("Location: ../login.php?error=1");
+        exit();
     }
 }
-        // Mostrar mensaje de error si las credenciales son incorrectas
-        if (!empty($error)) {
-            echo "<p style='color: red;'>$error</p>";
-        }
-        ?>
+?>

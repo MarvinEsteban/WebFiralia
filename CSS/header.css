@@ -4,10 +4,10 @@
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    
     align-items: center;
     padding: 10px 20px;
-    background-color: #f8f9fa;
+    background-color: rgba(255, 255, 255, 0.9);
     z-index: 1000; /* Mantenerlo encima del resto del contenido */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra opcional */
 }
@@ -19,11 +19,44 @@
 
 .menu {
     display: flex;
-    gap: 15px;
+    margin-left: 5%;
+    gap: 95px;
+    text-align: left;
+    
+}
+.menu2 {
+    text-align: right;
+    margin-left: 35%;
+    display: flex;
+    gap: 95px;
+    
+    
 }
 
 .menu a {
     text-decoration: none;
+    color: #553667;
+    font-size: 18px;
+    font-weight: 600; /* Un peso intermedio para evitar un cambio brusco */
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
     color: #333;
-    font-size: 16px;
+    font-weight: 600; /* No cambia el font-weight real */
+    text-shadow: 0 0 0.8px #333, 0 0 0.8px #333; /* Simula negrita sin afectar el ancho */
+}
+
+.menu2 a {
+    text-decoration: none;
+    color: #553667;
+    font-size: 18px;
+    font-weight: 600; /* Un peso intermedio para evitar un cambio brusco */
+    transition: color 0.3s ease;
+}
+
+.menu2 a:hover {
+    color: #333;
+    font-weight: 600; /* No cambia el font-weight real */
+    text-shadow: 0 0 0.8px #333, 0 0 0.8px #333; /* Simula negrita sin afectar el ancho */
 }

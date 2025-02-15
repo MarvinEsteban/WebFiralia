@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,9 @@
     <link rel="stylesheet" href="CSS/login.css">
     <link rel="stylesheet" href="CSS/header.css">
 </head>
+
 <body>
-    <header>
+<header>
         <div class="header">
             <div class="logo"><a href="homePage.html"><img src="images/IMG_0037.PNG" alt="Logo Firalia" ></a></div>
             <div class="menu">
@@ -16,14 +18,24 @@
                 <a href="recomendations.html">Recomendaciones</a>
                 <a href="soon.html">Queda Poco</a>
                 <a href="support.html">Soporte</a>
-                <a href="login.html">Iniciar Sesión</a>
-                <a href="register.html">Registrarse</a>
+                
+            </div>
+            <div class="menu2">
+                
+                <a href="login.php">Iniciar Sesión</a>
+                <a href="register.php">Registrarse</a>
             </div>
         </div>
     </header>
     <div class="login-container">
         <h2>Iniciar Sesión</h2>
-        
+
+        <?php
+if (isset($_GET['error']) && $_GET['error'] == 1) {
+    echo "<p style='color: red; text-align: center;'>Usuario o contraseña incorrectos.</p>";
+}
+?>
+
         <form action="PHP/login.php" method="POST">
             <div class="form-group">
                 <label for="usuario">Usuario:</label>
@@ -40,14 +52,17 @@
                 <button type="submit">Ingresar</button>
             </div>
             <div class="form-group">
-               <a href="#" style="font-size: 80%;justify-content: space-around;">¿Olvidaste la contraseña?</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="font-size: 80%;">Registrarse</a>
+                <a href="#" style="font-size: 80%;justify-content: space-around;">¿Olvidaste la
+                    contraseña?</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"
+                    style="font-size: 80%;">Registrarse</a>
             </div>
             <div class="form-group">
-               
+
             </div>
 
 
         </form>
     </div>
 </body>
+
 </html>

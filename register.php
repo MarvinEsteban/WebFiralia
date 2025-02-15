@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +7,8 @@
     <link rel="stylesheet" href="CSS/recomendations.css">
     <link rel="stylesheet" href="CSS/header.css">
 </head>
-
 <body>
-    <header>
+<header>
         <div class="header">
             <div class="logo"><a href="homePage.html"><img src="images/IMG_0037.PNG" alt="Logo Firalia" ></a></div>
             <div class="menu">
@@ -32,10 +30,10 @@
         <img class="imageSearchBox" src="images/logo3.PNG" alt="Logo Firalia">
     <div class="search-section">
         <div class="search-container">
-            <h1>RECOMENDACIONES</h1>
+            <h1>REGISTRARSE</h1>
         </div>
     </div>
 </div>
-</body>
 
+</body>
 </html>
