@@ -53,7 +53,7 @@ if (isset($_GET['error']) && $_GET['error'] == 1) {
             </div>
             <div class="form-group">
                 <a href="#" style="font-size: 80%;justify-content: space-around;">¿Olvidaste la
-                    contraseña?</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"
+                    contraseña?</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="register.php"
                     style="font-size: 80%;">Registrarse</a>
             </div>
             <div class="form-group">
