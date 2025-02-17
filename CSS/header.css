@@ -20,13 +20,13 @@
 .menu {
     display: flex;
     margin-left: 5%;
-    gap: 95px;
+    gap: 75px;
     text-align: left;
     
 }
 .menu2 {
     text-align: right;
-    margin-left: 35%;
+    margin-left: 25%;
     display: flex;
     gap: 95px;
     
