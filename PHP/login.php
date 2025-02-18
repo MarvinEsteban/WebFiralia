@@ -23,6 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Redirigir de vuelta a login.html con un mensaje de error
         header("Location: ../login.php?error=1");
         exit();
+ 
     }
 }
 ?>
