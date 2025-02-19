@@ -1,6 +1,6 @@
 .search-section {
     min-height: 100vh;
-    background-image: url(../images/homePage.jpg);
+    background-image: url(../images/homePage2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center
@@ -20,8 +20,8 @@
 .explorer {
     grid-column-start: 4;
     grid-column-end: 8;
-    grid-row-start: 5;
-    grid-row-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -36,12 +36,14 @@
     grid-column-start: 3;
     grid-column-end: 9;
     grid-row-start: 1;
-    grid-row-end: 5;
+    grid-row-end: 3;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: flex-end;
     align-items: center;
+    
+   
 }
 
 .title-logo{

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Fet per: Joan Marc-->
+
+<users xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="users.xsd">
+    <user>
+        <name></name>
+        <lastname></lastname>
+        <age></age>
+        <profile_image></profile_image>
+        <register_date></register_date>
+        <about></about>
+    </user>
+</users>
