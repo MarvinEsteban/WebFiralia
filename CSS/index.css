@@ -1,10 +1,14 @@
 .search-section {
-    min-height: 100vh;
+    min-height: 130vh;
     background-image: url(../images/homePage2.jpg);
     background-size: cover;
+    position: relative;
+    z-index: 10;
     background-repeat: no-repeat;
-    background-position: center
+    background-position: center;
+    
 }
+
 
 .grid-container {
     height: 94vh;
@@ -20,8 +24,8 @@
 .explorer {
     grid-column-start: 4;
     grid-column-end: 8;
-    grid-row-start: 4;
-    grid-row-end: 5;
+    grid-row-start: 6;
+    grid-row-end:7;
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -35,8 +39,8 @@
 .title-container{
     grid-column-start: 3;
     grid-column-end: 9;
-    grid-row-start: 1;
-    grid-row-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -72,8 +76,23 @@
 
 }
 
+
+
+
+.info-1{
+ 
+height: 100vh;
+
+}
+
+
+
 @media(max-width:900px){
    
+    .search-section {
+        background-image: url(../images/homePage3.jpg);
+    }
+
     .explorer {
         grid-column-start: 2;
         grid-column-end: 10;
