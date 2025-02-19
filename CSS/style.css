@@ -97,6 +97,10 @@ textarea:not([rows]) {
 /*
 Turoail used https://www.youtube.com/watch?v=U8smiWQ8Seg
 */
+html, body {
+    overflow-x: hidden;
+}
+
 .main-nav{
     background-color: rgb(255,255,255);
 
@@ -177,12 +181,4 @@ height: 100%;
     }
 
 }
-@media(max-width:400px){
-    .sidebar{
-    width: 100%;
-    }
-}
-
-
-
 
