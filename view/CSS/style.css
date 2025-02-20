@@ -342,7 +342,7 @@ body {
 
 @media(max-width:800px) {
     .footer {
-        height: 45vh;
+        height: 55vh;
     }
 
     .ul-download {
@@ -358,7 +358,7 @@ body {
     }
 
     .ul-apps li {
-    width: 50%;
+    width: 40%;
     justify-content: flex-end;
     }
 
