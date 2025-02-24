@@ -28,8 +28,6 @@ h2{
     grid-template-columns: 30% 40% 30%;
     grid-template-rows: 12% 76% 12%;
 
-
-
 }
 
 .login-container{
@@ -100,6 +98,7 @@ backdrop-filter: blur(20px);
     .login-grid{
         grid-template-columns: 15% 70% 15%;
         grid-template-rows: 15% 70% 15%;
+        
     }
     h2{
         font-size: 2em;
