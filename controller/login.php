@@ -1,5 +1,8 @@
 <?php
+
+
 session_start();
+
 
 $usuario_valido = 'usuario';
 $contrasena_usuario_valida = '12345';
@@ -13,11 +16,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($usuario === $usuario_valido && $contrasena === $contrasena_usuario_valida) {
         $_SESSION['usuario'] = $usuario;
-        header("Location: ../bienvenidoUsuario.html");
+        header("Location: ../view/bienvenidoUsuario.html");
         exit();
     } elseif ($usuario === $admin_valido && $contrasena === $contrasena_admin_valida) {
         $_SESSION['usuario'] = $usuario;
-        header("Location: ../bienvenidoAdmin.html");
+        header("Location: ../view/bienvenidoAdmin.html");
         exit();
     } else {
         // Redirigir de vuelta a login.html con un mensaje de error
