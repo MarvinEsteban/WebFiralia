@@ -100,7 +100,9 @@ backdrop-filter: blur(20px);
     .login-grid{
         grid-template-columns: 15% 70% 15%;
         grid-template-rows: 15% 70% 15%;
-        border: solid 3px red;
+    }
+    h2{
+        font-size: 2em;
     }
 }
 
