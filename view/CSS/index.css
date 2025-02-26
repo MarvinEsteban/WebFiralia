@@ -105,7 +105,9 @@ min-height: 100vh;
 
 
 .card-list .card-item .card-link{
+    user-select: none;
     width: 400px;
+    margin-left: 10%;
     display: block;
     padding: 18px;
     border-radius: 12px;
