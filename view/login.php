@@ -31,7 +31,7 @@
                 <li class="hideOnMobile"><a href="soon.html">Queda Poco</a></li>
                 <li class="hideOnMobile"><a href="support.html">Soporte</a></li>
                 <li class="hideOnMobile"><a href="login.php">Iniciar Sesión</a></li>
-                <li class="hideOnMobile"><a href="register.html">Registrarse</a></li>
+                <li class="hideOnMobile"><a href="register.php">Registrarse</a></li>
                 <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
                             height="24px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed">
                             <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
