@@ -55,7 +55,7 @@
                     </div>
 
                     <div class="input-box">
-                        <input type="text" name="usuario" id="usuario" placeholder="Username" required>
+                        <input type="text" name="user" id="user" placeholder="Username" required>
                     </div>
 
                     <div class="input-box">
