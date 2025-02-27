@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/register.css">
+    <title>Iniciar Sesión</title>
 
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/REGISTER.css">
 </head>
 
 <body>
-    <section class="search-section">
+    <section class="login-section">
         <nav class="main-nav">
             <ul class="sidebar">
                 <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
@@ -22,33 +22,56 @@
                 <li><a href="recomendations.html">Recomendaciones</a></li>
                 <li><a href="soon.html">Queda Poco</a></li>
                 <li><a href="support.html">Soporte</a></li>
-                <li><a href="login.html">Iniciar Sesión</a></li>
-                <li><a href="register.html">Registrarse</a></li>
+                <li><a href="login.php">Iniciar Sesión</a></li>
+                <li><a href="register.php">Registrarse</a></li>
             </ul>
             <ul class="main-menu">
                 <li><a href="index.html"><img class="logo-nav" src="images/IMG_0037.PNG" alt="Logo"></a></li>
                 <li class="hideOnMobile"><a href="recomendations.html">Recomendaciones</a></li>
                 <li class="hideOnMobile"><a href="soon.html">Queda Poco</a></li>
                 <li class="hideOnMobile"><a href="support.html">Soporte</a></li>
-                <li class="hideOnMobile"><a href="login.html">Iniciar Sesión</a></li>
-                <li class="hideOnMobile"><a href="register.html">Registrarse</a></li>
+                <li class="hideOnMobile"><a href="login.php">Iniciar Sesión</a></li>
+                <li class="hideOnMobile"><a href="register.php">Registrarse</a></li>
                 <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
                             height="24px" viewBox="0 -960 960 960" width="26px" fill="#e8eaed">
                             <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
                         </svg></a></li>
             </ul>
         </nav>
-        <div class="grid-container">
-            <div class="title-container">
-                <p class="title-text"> Registrarse </p>
+        <div class="login-grid">
+            <div class="login-container">
+                <h2>Regístrate</h2>
+                <form action="../controller/login.php" method="POST">
+                    <div class="input-box">
+                        <input type="text" name="name" id="name" placeholder="Name" required>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="text" name="lastname" id="lastname" placeholder="Lastname" required>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="text" name="email" id="email" placeholder="Email" required>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="text" name="usuario" id="usuario" placeholder="Username" required>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="password" name="password" id="password" placeholder="Password" required>
+                    </div>
+
+
+
+                    <button type="submit" class="btn">Register</button>
+
+                    <div class="register-box">
+                        <p>Eres una empresa? <a href="#">Registro para empresas</a></p>
+                    </div>
+                </form>
             </div>
         </div>
-
-
-    </section>
-    <section class="blended-section">
-    </section>
-    <section class="info-1">
 
     </section>
     <footer class="footer">
@@ -70,7 +93,7 @@
             </div>
             <div class="footer-container-1-3">
                 <p>Descarga Nuestra App</p>
-                <nav >
+                <nav>
                     <ul class="ul-download">
                         <li><a href="#"><img src="images/icons/appstore.png" alt="Apple Store"></a></li>
                         <li><a href="#"><img src="images/icons/googleplay.webp" alt="Google Play"></a></li>
