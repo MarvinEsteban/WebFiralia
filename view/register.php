@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar Sesión</title>
+    <title>Registrarse</title>
 
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/REGISTER.css">
@@ -41,17 +41,17 @@
         <div class="login-grid">
             <div class="login-container">
                 <h2>Regístrate</h2>
-                <form action="../controller/login.php" method="POST">
+                <form action="../controller/processSignup.php" method="POST">
                     <div class="input-box">
-                        <input type="text" name="name" id="name" placeholder="Name" required>
+                        <input type="text" name="name" id="name" placeholder="Nombre" required>
                     </div>
 
                     <div class="input-box">
-                        <input type="text" name="lastname" id="lastname" placeholder="Lastname" required>
+                        <input type="text" name="lastname" id="lastname" placeholder="Apellidos" required>
                     </div>
 
                     <div class="input-box">
-                        <input type="text" name="email" id="email" placeholder="Email" required>
+                        <input type="text" name="email" id="email" placeholder="Email" required formnovalidate>
                     </div>
 
                     <div class="input-box">
@@ -59,7 +59,19 @@
                     </div>
 
                     <div class="input-box">
-                        <input type="password" name="password" id="password" placeholder="Password" required>
+                        <input type="text" name="rol" id="rol"" placeholder="Rol" required formnovalidate>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="password" name="password" id="password" placeholder="Constraseña" required formnovalidate>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="password" name="password_confirmation" id="password_confirmation" placeholder="Confirmación Constraseña" required formnovalidate>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="image" name="user_image" id="user_image" placeholder="Imagen Usuario">
                     </div>
 
 
